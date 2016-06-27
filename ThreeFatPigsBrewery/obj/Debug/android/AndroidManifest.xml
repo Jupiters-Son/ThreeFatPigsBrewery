@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ThreeFatPigsBrewery.ThreeFatPigsBrewery" android:versionCode="1" android:versionName="1.0">
+  <uses-sdk android:minSdkVersion="11" />
+  <application android:label="ThreeFatPigsBrewery" android:icon="@drawable/icon" android:theme="@android:style/Theme.Holo.Light" android:name="mono.android.app.Application" android:debuggable="true">
+    <activity android:icon="@drawable/tfproundicn" android:label="ThreeFatPigsBrewery" android:name="md597b77cce18b0c339659331618f6d893b.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="Records" android:theme="@android:style/Theme.DeviceDefault" android:name="md597b77cce18b0c339659331618f6d893b.Records" />
+    <activity android:label="Search" android:theme="@android:style/Theme.DeviceDefault" android:name="md597b77cce18b0c339659331618f6d893b.Search" />
+    <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Scanner" android:name="md5ebfcfb315379575a1b34662c6abbe082.ZxingActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="ThreeFatPigsBrewery.ThreeFatPigsBrewery.mono.MonoRuntimeProvider.__mono_init__" />
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.ThreeFatPigsBrewery.ThreeFatPigsBrewery" />
+      </intent-filter>
+    </receiver>
+  </application>
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.CAMERA" />
+</manifest>
